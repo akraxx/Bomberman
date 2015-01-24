@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ce fichier contient la description xml de la police, et qui sera lue par XNA
+Framework Content Pipeline. Suivez les commentaires pour personnaliser l’apparence
+de la police dans le jeu et changer les caractères disponibles.
+
+-->
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics">
+  <Asset Type="Graphics:FontDescription">
+
+    <!--
+    Modifiez cette chaîne pour modifier la police importée.
+    -->
+    <FontName>Arial</FontName>
+
+    <!--
+    La taille de la valeur flottante, en points. Modifiez cette valeur pour changer
+    la taille de la police.
+    -->
+    <Size>8</Size>
+
+    <!--
+    Espace de la valeur flottante, en pixels. Modifiez cette valeur pour changer
+    l’espacement entre les caractères.
+    -->
+    <Spacing>0</Spacing>
+
+    <!--
+    UseKerning contrôle la présentation de la police. Si cette valeur est vraie, les informations de crénage
+    sont utilisées lors du positionnement des caractères.
+    -->
+    <UseKerning>true</UseKerning>
+
+    <!--
+    Style contrôle le style de la police. Les entrées valides sont Regular, Bold, Italic,
+    et Bold Italic et respectent la casse.
+    -->
+    <Style>Bold</Style>
+
+    <!--
+    Si vous supprimez le commentaire de cette ligne, le caractère par défaut est remplacé si vous dessinez
+    ou mesurez du texte qui contient des caractères non compris dans la police.
+    -->
+    <!-- <DefaultCharacter>*</DefaultCharacter> -->
+
+    <!--
+    CharacterRegions contrôle les lettres disponibles dans la police. Tous les
+    caractères doivent être créés et disponibles pour le dessin. La plage
+    par défaut va de 32 (espace ASCII) à 126 (~), couvrant le jeu de caractères Latin
+    de base. Les caractères sont triés selon la norme Unicode.
+    Pour plus d’informations, voir la documentation.
+    -->
+    <CharacterRegions>
+      <CharacterRegion>
+        <Start>&#32;</Start>
+        <End>&#126;</End>
+      </CharacterRegion>
+    </CharacterRegions>
+  </Asset>
+</XnaContent>

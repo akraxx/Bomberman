@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{F109F113-C471-491A-BA1B-7317BE4B6075}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bomberman</RootNamespace>
+    <AssemblyName>BombermanLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows Phone</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>24a25593-d8cc-4ef3-9d2e-c4008b1af932</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+    <XnaRefreshLevel>1</XnaRefreshLevel>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows Phone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows Phone\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows Phone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows Phone\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="Microsoft.Xna.Framework.Game" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices" />
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Actions.cs" />
+    <Compile Include="Model\Blast.cs" />
+    <Compile Include="Model\BlastMapper.cs" />
+    <Compile Include="Model\Bomb.cs" />
+    <Compile Include="Model\Bomberman.cs" />
+    <Compile Include="Model\Bonus.cs" />
+    <Compile Include="Model\Creature.cs" />
+    <Compile Include="Model\CreatureMover.cs" />
+    <Compile Include="Model\SpawnPoint.cs" />
+    <Compile Include="Model\Tools.cs" />
+    <Compile Include="Network\BlastPayload.cs" />
+    <Compile Include="Network\BombermanPayload.cs" />
+    <Compile Include="Network\BombPayload.cs" />
+    <Compile Include="Network\BonusPayload.cs" />
+    <Compile Include="Network\CreaturePayload.cs" />
+    <Compile Include="Network\EventArgs.cs" />
+    <Compile Include="Model\Game.cs" />
+    <Compile Include="Model\IDGenerator.cs" />
+    <Compile Include="Model\Level.cs" />
+    <Compile Include="Model\Map.cs" />
+    <Compile Include="Model\MapFactory.cs" />
+    <Compile Include="Model\Monster.cs" />
+    <Compile Include="Model\MonsterType.cs" />
+    <Compile Include="Model\Object.cs" />
+    <Compile Include="Model\Orientations.cs" />
+    <Compile Include="Model\Player.cs" />
+    <Compile Include="Model\PowerUp.cs" />
+    <Compile Include="Model\SpriteState.cs" />
+    <Compile Include="Model\Status.cs" />
+    <Compile Include="Model\TimedObject.cs" />
+    <Compile Include="Model\Wall.cs" />
+    <Compile Include="Network\IMessageInterface.cs" />
+    <Compile Include="Network\LocalMessageInterface.cs" />
+    <Compile Include="Network\LoginPayload.cs" />
+    <Compile Include="Network\MapEvent.cs" />
+    <Compile Include="Network\MessageEvent.cs" />
+    <Compile Include="Network\MonsterPayload.cs" />
+    <Compile Include="Network\NullMessageInterface.cs" />
+    <Compile Include="Network\ObjectPayload.cs" />
+    <Compile Include="Network\PayloadFactory.cs" />
+    <Compile Include="Network\OptionsPayload.cs" />
+    <Compile Include="Network\PlayerPayload.cs" />
+    <Compile Include="Network\PositionPayload.cs" />
+    <Compile Include="Network\PowerUpPayload.cs" />
+    <Compile Include="Network\Protocol.cs" />
+    <Compile Include="Network\ReasonCodes.cs" />
+    <Compile Include="Network\SetMapPayload.cs" />
+    <Compile Include="Network\TimedObjectPayload.cs" />
+    <Compile Include="Network\VectorCodec.cs" />
+    <Compile Include="Network\WallPayload.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
